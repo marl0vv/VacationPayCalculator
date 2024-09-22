@@ -12,7 +12,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
 @RestController
-@RequestMapping("/vacationPay")
+@RequestMapping("/calculate")
 public class VacationPayCalculatorController {
 
     private static final Logger logger = LoggerFactory.getLogger(VacationPayCalculatorController.class);
