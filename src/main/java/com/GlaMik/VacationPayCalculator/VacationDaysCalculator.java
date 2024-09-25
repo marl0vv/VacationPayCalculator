@@ -9,10 +9,15 @@ import java.util.Set;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 
+/**
+ * @author Mikhail Gladkikh
+ * Created: 22-09-2024
+ * Description: This class computes duration of a vacation, taking into account holidays and weekends
+ */
 public class VacationDaysCalculator {
 
-    private LocalDate vacationStart;
-    private LocalDate vacationEnd;
+    private final LocalDate vacationStart;
+    private final LocalDate vacationEnd;
     private Set<LocalDate> nonWorkingDays;
 
     private static final Map<LocalDate, Integer> HOLIDAYS = new HashMap<>();

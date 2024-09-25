@@ -11,6 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
+/**
+ * @author Mikhail Gladkikh
+ * Created: 22-09-2024
+ * Description: This class is a Rest Controller that takes input from GET-query, passes it to
+ * VacationPayCalculator.java and then returns the result
+ */
 @RestController
 @RequestMapping("/calculate")
 public class VacationPayCalculatorController {
